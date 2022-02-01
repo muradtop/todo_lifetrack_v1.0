@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/signUpFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="ccom.example.todo_lifetrack.registrHomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/createTaskFragment"
+        android:name="com.example.todo_lifetrack.registr.CreateTaskFragment"
+        android:label="fragment_create_task"
+        tools:layout="@layout/fragment_create_task" />
+
+    <fragment
+        android:id="@+id/mainBoardFragment"
+        android:name="com.example.todo_lifetrack.registr.MainBoardFragment"
+        android:label="fragment_main_board"
+        tools:layout="@layout/fragment_main_board" />
+    <fragment
+        android:id="@+id/finishRegistrationFragment"
+        android:name="com.example.todo_lifetrack.registr.FinishRegistrationFragment"
+        android:label="fragment_finish_registration"
+        tools:layout="@layout/fragment_finish_registration" />
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.todo_lifetrack.registr.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" />
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.todo_lifetrack.registr.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" />
+</navigation>

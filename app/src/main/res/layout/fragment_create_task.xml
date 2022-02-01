@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_con"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="20dp"
+    app:cardCornerRadius="12dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="333dp">
+
+
+        <EditText
+            android:id="@+id/task_ed"
+            style="@style/EditTextTask"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/date_hint_tv"
+            style="@style/Repeat"
+            android:text="@string/due_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/task_ed" />
+
+        <TextView
+            android:id="@+id/choose_date_tv"
+            style="@style/DueDate"
+            android:text="@string/_20_08_21"
+            app:drawableEndCompat="@drawable/ic_calendar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/date_hint_tv" />
+
+        <TextView
+            android:id="@+id/repeat_hint_tv"
+            style="@style/Repeat"
+            android:text="@string/repeat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/task_ed" />
+
+        <TextView
+            android:id="@+id/choose_repeat_tv"
+            style="@style/DueDate"
+            android:text="@string/every_week"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:drawableEndCompat="@drawable/ic_arrow_down"
+            app:layout_constraintTop_toBottomOf="@id/date_hint_tv" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/apply_btn"
+            style="@style/EditTextTask"
+            android:layout_marginVertical="22dp"
+            android:background="@drawable/rectangle_button_background"
+            android:text="@string/add_new_task"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/choose_date_tv" />
+
+        <TextView
+            android:layout_marginVertical="22dp"
+            style="@style/TaskList"
+            android:text="@string/bask_to_task_list"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/apply_btn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
